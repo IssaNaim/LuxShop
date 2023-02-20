@@ -27,6 +27,7 @@ button{
     padding: 5px 8px;
     border-top: 2px solid #997300;
     margin-top: 16px;
+    animation: button-onload 1s;
 }
 
 h1, h2{
@@ -53,6 +54,7 @@ h1, h2{
     font-weight: 700;
     font-size: 48px;
     color: #1A0600;
+    animation: herotext-onload 1.5s;
 }
 
 #hero-text-color{
@@ -66,6 +68,7 @@ h1, h2{
     color: #997300;
     letter-spacing: 1px;
     font-size: 14px;
+    animation: herotext-onload 1.5s;
 }
 
 .featured-section{
@@ -121,6 +124,7 @@ h1, h2{
 .featured-text img{
     color: #808080;
     width: 3vw;
+    transition-duration: 200ms;
 }
 
 .featured{
@@ -171,6 +175,10 @@ h1, h2{
     font-family: 'Lato';
 }
 
+.trending-item{
+    transition-duration: 100ms;
+}
+
 .trending-item img{
     width: 150px;
     margin: 10px;
@@ -215,11 +223,74 @@ footer{
     margin: 15px;
 }
 
-.content p{
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.content a{
+    text-decoration: none;
+    color: #FFF2E5;
     font-weight: 300;
     font-size: 16px;
 }
 
-.content img{
+.content a:hover{
+    text-decoration: underline;
+}
+
+.content a{
     margin-right: 12px;
+}
+
+@keyframes herotext-onload{
+    0%{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes button-onload{
+    0%{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+button:hover{
+    background-color: #4D2000;
+}
+
+button:active{
+    border-top: none;
+    background-color: #553200;
+    border-bottom: 2px solid #997300;
+}
+
+.trending-item:hover{
+    scale: 1.1;
+}
+
+.category:hover .featured-text img{
+    margin-left: 40px;
+}
+
+#cart{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hamburger-menu{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
 }

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>LuxShop</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="./icons/Hamburgur-menu.svg" class="nav-icon">
+            <button id="hamburger-menu">
+                <img src="./icons/Hamburgur-menu.svg" class="nav-icon">
+            </button>
             <img src="./icons/logo.svg">
-            <img src="./icons/shopping-bag-02-svgrepo-com.svg" class="nav-icon">
+            <button id="cart">
+                <img src="./icons/shopping-bag-02-svgrepo-com.svg" class="nav-icon">
+            </button>
         </nav>
     </header>
     
@@ -38,9 +42,8 @@
                     <div class="featured-text">
                         <h3>Jackets</h3>
                         <p>10 items</p>
-                   
-                    <img src="./icons/double-arrow-right-icon.svg" class="arrow-icon">
-                </div>
+                        <img src="./icons/double-arrow-right-icon.svg" class="arrow-icon">
+                    </div>
                     <img src="./img/fea1.jpg" class="featured">
                 </div>
                 <div class="category" id="category2">
@@ -138,30 +141,39 @@
         <div class="container">
             <div class="content">
                 <h2>LuxShop</h2>
-                <p>Let's connect with us</p>
-                <img src="./icons/facebook-square-icon.svg">
-                <img src="./icons/instagram-square-icon.svg">
-                <img src="./icons/twitter-icon.svg">
+                <ul>
+                    <a href="#email">Let's connect with us</a><br><br>
+                    <a href="#facebook"><img src="./icons/facebook-square-icon.svg"></a>
+                    <a href="#instagram"><img src="./icons/instagram-square-icon.svg"></a>
+                    <a href="#twitter"><img src="./icons/twitter-icon.svg"></a>
+                </ul>
+                
             </div>
             <div class="content">
                 <h2>Explore</h2>
-                <p>Home</p>
-                <p>Featured</p>
-                <p>New</p>
-                <p>Contact</p>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
             <div class="content">
                 <h2>Services</h2>
-                <p>Pricing</p>
-                <p>Free Shipping</p>
-                <p>Gift Cards</p>
+                <ul>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#free-shipping">Free Shipping</a></li>
+                    <li><a href="#giftcards">Gift Cards</a></li>
+                </ul>
             </div>
             <div class="content">
                 <h2>Shopping</h2>
-                <p>Clothing Store</p>
-                <p>Trending Shoes</p>
-                <p>Accessories</p>
-                <p>Sale</p>
+                <ul>
+                    <li><a href="#clothingstore">Clothing Store</a></li>
+                    <li><a href="#trending-shoes">Trending Shoes</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                </ul>
             </div>
         </div>
     </footer>
