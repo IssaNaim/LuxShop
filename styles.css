@@ -173,6 +173,7 @@ h1, h2{
 
 .trending-item img{
     width: 150px;
+    margin: 10px;
 }
 
 .trending-item h4{
