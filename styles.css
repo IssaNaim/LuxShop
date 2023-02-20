@@ -143,6 +143,7 @@ h1, h2{
     font-size: 5vw;
     color: #1A0600;
     letter-spacing: 4px;
+    margin-bottom: 20px;
 }
 
 .sale-section p{
@@ -154,7 +155,7 @@ h1, h2{
 .sale-text{
     position: relative;
     top: 20%;
-    margin-left: 20px;
+    margin-left: 7%;
 }
 
 .trending-section{
