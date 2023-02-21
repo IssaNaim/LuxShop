@@ -5,12 +5,15 @@ body{
 
 nav{
     display: flex;
+    position: sticky;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #FFF2E5;
     padding: 7%;
     box-sizing: border-box;
+    top: 0;
 }
 
 .nav-icon{
@@ -81,6 +84,7 @@ h1, h2{
 .featured-section h2{
     margin: 20px 0px 20px 0px;
     font-size: 5vw;
+    color: #1A1A1A;
 }
 
 .categories{
@@ -236,6 +240,11 @@ ul{
     font-size: 16px;
 }
 
+li{
+    margin-bottom: 12px;
+}
+
+
 .content a:hover{
     text-decoration: underline;
 }
@@ -307,4 +316,157 @@ button:active{
 
 #logo{
     animation: logo-onload 1s;
+}
+
+@media (min-width: 768px){
+    nav{
+        padding: 20px;
+    }
+    .hero-section{
+        background-size: contain;
+    }
+}
+
+@media (min-width: 992px){
+    .hero-content{
+        margin-left: 7vw;
+    }
+    #hero-text{
+        font-size: 60px;
+    }
+    #hero-subtext{
+        font-size: 20px;
+    }
+    button{
+        font-size: 20px;
+    }
+    .hero-section{
+        background-position-x: 40vw;
+        max-height: none;
+        height: 70vh;
+    }
+    .featured-section h2{
+        font-size: 3vw;
+        margin: 60px 0px 60px 0px;
+    }
+    .categories{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 85vw;
+        gap: 50px;
+        margin: 0 auto;
+    }
+    .featured-text{
+        position: absolute;
+        left: 1vw;
+    }
+    .featured-text h3{
+        font-size: 2vw;
+        margin-top: 20px;
+    }    
+    .featured-text p{
+        font-weight: 300;
+        color: #808080;
+        margin-top: 1vh;
+        font-size: 1vw;
+    }
+    .featured-text img{
+        position: absolute;
+        bottom: 500;
+        width: 1vw;
+    }
+    .sale-section{
+        height: 70vh;
+        background-size: contain;
+    }
+    .sale-text{
+        margin-left: 14vw;
+        top: 30%;
+    }
+    .sale-text p{
+        font-size: 48px;
+    }
+    .sale-text h1{
+        font-size: 60px;
+    }
+    .trending-section h1{
+        font-size: 3vw;
+        margin: 60px 0px 60px 0px;
+    }
+    .trending-item img{
+        width: 300px;
+    }
+    .trending-item h4{
+        font-size: 24px;
+    }
+    .trending-item p{
+        font-size: 20px;
+    }
+    .brand-section img{
+        max-width: 300px;
+    }
+    .brand-section{
+        justify-items: center;
+        margin: 60px 0px 60px 0px;
+    }
+    footer{
+        padding: 50px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .content a{
+        font-size: 20px;
+    }
+    nav{
+        padding: 35px;
+    }
+}
+
+@media (min-width: 1440px){
+
+    .hero-section{
+        background-position-x: 55vw;
+    }
+    .hero-content{
+        margin-left: 15vw;
+    }
+    #hero-text{
+        font-size: 72px;
+    }
+    #hero-text-color{
+        font-size: 60px;
+    }
+    #hero-subtext{
+        font-size: 30px;
+    }
+    button{
+        font-size: 30px;
+    }
+    .sale-text h1{
+        font-size: 60px;
+    }
+    .sale-text{
+        margin-left: 22vw;
+    }
+    .sale-section{
+        background-position: center;
+    }
+    .trending-item img{
+        width: 350px;
+    }
+    .trending-item h4{
+        font-size: 30px;
+    }
+    .trending-item p{
+        font-size: 24px;
+    }
+    nav{
+        padding: 50px;
+    }
+    .nav-icon{
+        width: 75px;
+    }
+    #logo{
+        height: 50px;
+    }
 }
